@@ -1,0 +1,62 @@
+{
+	"Print to console": {
+		"prefix": "cons",
+		"body": [
+			"console.log('$1:', $1);"
+		],
+		"description": "Log output to console"
+	},
+	"Print to console (Standard)": {
+		"prefix": "conn",
+		"body": [
+			"console.log('$1');"
+		],
+		"description": "Log output to console (Standard)"
+	},
+	"Destructured Props": {
+		"prefix": "depr",
+		"body": [
+			"const { $1 } = this.props;"
+		],
+		"description": "Destructuring of component props"
+	},
+	"Destructured State": {
+		"prefix": "dest",
+		"body": [
+			"const { $1 } = this.state;"
+		],
+		"description": "Destructuring of component state"
+	},
+	"Grommet Import": {
+		"prefix": "gro",
+		"body": [
+			"import $1 from 'grommet/components/$1';"
+		],
+		"description": "Import grommet component"
+	},
+	"Bark Import": {
+		"prefix": "bar",
+		"body": [
+			"import { $1 } from 'bark';"
+		],
+		"description": "Import Bark component"
+	},
+	"Generic Import": {
+		"prefix": "imp",
+		"body": [
+			"import $1 from './$1';"
+		],
+		"description": "Import generic file"
+	},
+	"tryCatch": {
+		"prefix": "rty",
+		"body": [
+			"try {",
+			"\t${TM_SELECTED_TEXT}$0",
+			"} catch (err) {",
+			"\tconsole.log(err);",
+			"}"
+		],
+		"description": "Wraps selected text in a try catch"
+	}
+}
